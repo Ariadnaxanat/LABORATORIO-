@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <div class="containe" id="containe">
+                <form action="" class="formulario" id="formulario">
+                    <h1>Create Account</h1>
+                    <!--GRUPO DE NOMBRE-->
+                    <div class="formulario-grupo"> 
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">        
+                        <img class="icon-error" src="error-icon.svg" alt="">
+                        <img class="icon-success" src="success-icon.svg" alt="">
+                        <small>Nombre inválido</small> <!--error datos introducidos-->
+                    </div>
+                    <!--GRUPO DE EMAIL-->
+                    <div class="formulario-grupo"> 
+                        <label for="email">Email</label>
+                        <input type="text" id="email">        
+                        <img class="icon-error" src="error-icon.svg" alt="">
+                        <img class="icon-success" src="success-icon.svg" alt="">
+                        <small>Email inválido</small> <!--error datos introducidos-->
+                    </div>
+                    <!--GRUPO DE password-->
+                    <div class="formulario-grupo"> 
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password">        
+                        <img class="icon-error" src="error-icon.svg" alt="">
+                        <img class="icon-success" src="success-icon.svg" alt="">               
+                        <small>No debe tener más de 8 caractéres</small> <!--error datos introducidos-->
+                    </div>
+                    <!--GRUPO DE password2-->
+                    <div class="formulario-grupo"> 
+                        <label for="password2">Confirme su contraseña</label>
+                        <input type="password" id="password2">        
+                        <img class="icon-error" src="error-icon.svg" alt="">
+                        <img class="icon-success" src="success-icon.svg" alt="">
+                        <small>Las contraseñas no coinciden</small> <!--error datos introducidos-->
+                    </div>
+                    <!--BOTÓN ENVÍO-->
+                    <button class="buttom" type="submit">ENVIAR</button>
+                </form>
+            </div>
+            <div id= "dialog-container" class= "dialog-container">
+                <div class= "dialog-header">Registro completado</div>
+                <div id= "dialog-body" class= "dialog-body">Su formulario ha sido enviado con éxito</div>
+                <div class= "dialog-footer">
+                    <a onclick= "CustomAlert.close()">Ok</a>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+        <script src="/images/"></script>
+    </body>
+</html>
